@@ -1,14 +1,38 @@
 # Workflow State Sync
 
+## Project Overview
+
+Workflow State Sync explores how different teams or tools could keep an agreed view of a task's progress. A future service could help compare updates, decide which information takes priority, and flag disagreements that need a person's attention.
+
+**Current stage:** a documented concept, not a working synchronization product. It does not currently connect tools, change records, or run scheduled updates.
+
+## Business Use Cases
+
+These are possible future uses to discuss, not features available today:
+
+- **Cross-team planning:** map where a status such as requested, in review, or complete needs to stay understandable across handoffs.
+- **Reducing repeated administration:** identify places where people currently copy the same status into several tools and assess whether a future connection would help.
+- **Decision ownership:** agree which record should take priority and who should resolve conflicting updates.
+
+## Team Onboarding Checklist
+
+- [ ] Read the current-stage note and understand that no tools are being synchronized.
+- [ ] Choose a fictional task and describe its stages in everyday language.
+- [ ] Agree which team owns each update and which record would take priority.
+- [ ] Record how a person should handle a disagreement; do not connect or alter live records during onboarding.
+- [ ] Read the [contribution guide](CONTRIBUTING.md), agree a project contact, and browse [Related Projects](#related-projects).
+
+## Existing Project Details
+
 > **Status: documentation-first scaffold; not a runnable service.** Static inspection of `main` on 13 November 2026 found no application source, dependency manifest, automated tests, container image definition, or deployment configuration. Proposed behavior below must not be read as implemented functionality.
 
 ## Overview
 
 A candidate reconciliation service for keeping explicitly approved workflow state consistent across systems. There are no source adapters, credentials, scheduled jobs, webhooks, or active synchronizations in the repository.
 
-### Verified repository state
+### Initial audit and documentation history
 
-Only a title-only README existed; no application source, build manifest, tests, or deployment configuration was present. This documentation pass adds a README and architecture/setup guides only. It does not install dependencies, implement APIs, provision infrastructure, establish integrations, or deploy an application.
+Only a title-only README existed; no application source, build manifest, tests, or deployment configuration was present. The first documentation pass added the README and architecture/setup guides. Contribution and interface guides were added later; this plain-English refresh updates the README only. It does not install dependencies, implement APIs, provision infrastructure, establish integrations, or deploy an application.
 
 ## Architecture notes
 
@@ -44,7 +68,11 @@ There is no supported install/build/run command, required runtime version, envir
 
 Use synthetic data and sandbox dependencies during development. Never commit credentials, tokens, production payloads, or private operational records. Implement least-privilege access, schema validation, structured redacted diagnostics, bounded timeouts/retries, and tests before treating the service as usable. No build, runtime, performance, security, or integration test has been executed as part of this documentation pass.
 
-## Network Ecosystem
+## Related Projects
+
+Explore the seven other projects in this account. Each link opens that project's main page so you can compare its purpose and stage. These are browsing links, not live connections between applications.
+
+### Network Ecosystem
 
 This is a navigation network across all eight repositories owned by this account, audited on 13 November 2026. Links indicate sibling projects, **not implemented integrations**. The Java apps are independent learning projects; the six service repositories have no application code.
 
